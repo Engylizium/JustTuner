@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		822213B82F63476200700CFD /* PitchDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822213B22F63476100700CFD /* PitchDetector.swift */; };
+		822213B92F63476200700CFD /* TunerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822213B32F63476100700CFD /* TunerModel.swift */; };
+		822213BA2F63476200700CFD /* TunerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822213B42F63476200700CFD /* TunerViewModel.swift */; };
+		822213BB2F63476200700CFD /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822213B52F63476200700CFD /* AudioEngine.swift */; };
+		822213BD2F634F6F00700CFD /* Tuning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822213BC2F634F6F00700CFD /* Tuning.swift */; };
 		824DD7552F6321C4006FC396 /* JustTunerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DD7542F6321C4006FC396 /* JustTunerApp.swift */; };
 		824DD7572F6321C4006FC396 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824DD7562F6321C4006FC396 /* ContentView.swift */; };
 		824DD7592F6321C6006FC396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824DD7582F6321C6006FC396 /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		822213B22F63476100700CFD /* PitchDetector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PitchDetector.swift; sourceTree = "<group>"; };
+		822213B32F63476100700CFD /* TunerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunerModel.swift; sourceTree = "<group>"; };
+		822213B42F63476200700CFD /* TunerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunerViewModel.swift; sourceTree = "<group>"; };
+		822213B52F63476200700CFD /* AudioEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		822213BC2F634F6F00700CFD /* Tuning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tuning.swift; sourceTree = "<group>"; };
 		824DD7512F6321C4006FC396 /* JustTuner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustTuner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		824DD7542F6321C4006FC396 /* JustTunerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustTunerApp.swift; sourceTree = "<group>"; };
 		824DD7562F6321C4006FC396 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,7 +63,12 @@
 			isa = PBXGroup;
 			children = (
 				824DD7542F6321C4006FC396 /* JustTunerApp.swift */,
+				822213B52F63476200700CFD /* AudioEngine.swift */,
 				824DD7562F6321C4006FC396 /* ContentView.swift */,
+				822213B22F63476100700CFD /* PitchDetector.swift */,
+				822213B32F63476100700CFD /* TunerModel.swift */,
+				822213B42F63476200700CFD /* TunerViewModel.swift */,
+				822213BC2F634F6F00700CFD /* Tuning.swift */,
 				824DD7582F6321C6006FC396 /* Assets.xcassets */,
 				824DD75D2F6321C6006FC396 /* JustTuner.entitlements */,
 				824DD75A2F6321C6006FC396 /* Preview Content */,
@@ -139,8 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				822213B92F63476200700CFD /* TunerModel.swift in Sources */,
+				822213B82F63476200700CFD /* PitchDetector.swift in Sources */,
+				822213BD2F634F6F00700CFD /* Tuning.swift in Sources */,
 				824DD7572F6321C4006FC396 /* ContentView.swift in Sources */,
 				824DD7552F6321C4006FC396 /* JustTunerApp.swift in Sources */,
+				822213BB2F63476200700CFD /* AudioEngine.swift in Sources */,
+				822213BA2F63476200700CFD /* TunerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +294,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "JustTuner needs access to your microphone to detect the pitch of your instrument.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -301,7 +323,9 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "JustTuner needs access to your microphone to detect the pitch of your instrument.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
