@@ -1,7 +1,7 @@
 # JustTuner 🎸
 > A minimalist, high-precision instrument tuner for macOS.
 
-(Assets/Screenshot.png)
+![App Window](Assets/Screenshot.png)
 
 ---
 
